@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+*{
+  font-family: "Poppins", sans-serif;
+}
+
+.container1 {
+  display: block;
+  margin: 2rem;
+  padding: 2rem;  
+}
+
+.container2 {
+  margin: 2em;
+}
+
+h2 {
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  color: white;
+  font-size: x-large;
+}
+
+.homeworkCard {
+  transform: translatey(0px);
+  mix-blend-mode: multiply;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 15px;
+  color: #243b55;
+  background-color: #ece5ce;
+  padding: 30px;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 10px 10px #83af9b;
+}
+
+.btnTarea {
+  margin-top: 20px;
+}
+
+.tarea {
+  width: 100%;
+  height: 10rem;
+  font-size: medium;
+  /* margin-bottom: 1rem; */
+  /* padding: 2rem; */
+}
+
+/* button.btn-outline-success button.btn-outline-danger  {
+
+} */
+
+/* font-family: "Baloo 2", cursive; */

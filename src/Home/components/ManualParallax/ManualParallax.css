@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+
+body,
+html {
+  margin: 0;
+}
+
+.bgimg-0,
+.bgimg-1,
+.bgimg-2,
+.bgimg-3,
+.bgimg-4,
+.bgimg-5,
+.bgimg-6,
+.bgimg-7,
+.bgimg-8,
+.bgimg-9,
+.bgimg-10,
+.bgimg-11,
+.bgimg-12 {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.bgimg-0 {
+  background-image: url("../../../images/libros_1.jpg");
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+
+.bgimg-1 {
+  background-image: url("../../../images/libros_11.jpg");
+  min-height: 100vh;
+}
+
+.bgimg-2 {
+  background-image: url("../../../images/libros_2.jpg");
+  min-height: 600px;
+}
+
+.bgimg-3 {
+  background-image: url("../../../images/libros_3.jpg");
+  min-height: 100vh;
+}
+
+.bgimg-4 {
+  background-image: url("../../../images/libros_4.jpg");
+  min-height: 100vh;
+}
+
+.bgimg-5 {
+  background-image: url("../../../images/libros_5.jpg");
+  min-height: 100vh;
+}
+
+.bgimg-6 {
+  background-image: url("../../../images/libros_6.jpg");
+  min-height: 100vh;
+}
+
+.bgimg-7 {
+  background-image: url("../../../images/libros_7.jpg");
+  min-height: 100vh;
+}
+
+.bgimg-8 {
+  background-image: url("../../../images/libros_8.jpg");
+  min-height: 100vh;
+}
+
+.bgimg-9 {
+  background-image: url("../../../images/libros_9.jpg");
+  min-height: 100vh;
+}
+
+.bgimg-10 {
+  background-image: url("../../../images/libros_10.jpg");
+  min-height: 100vh;
+}
+
+.bgimg-11 {
+  background-image: url("../../../images/libros_11.jpg");
+  min-height: 100vh;
+}
+
+.bgimg-12 {
+  background-image: url("../../../images/libros_12.jpg");
+  min-height: 100vh;
+}
+
+.caption {
+  position: relative;
+  width: 100%;
+  left: 0;
+  top: 50%;
+  text-align: center;
+  color: #000;
+}
+
+.caption .border {
+  background-color: #584;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+.section {
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 200px;
+}
+
+.animate-charcter {
+  text-transform: uppercase;
+  background-image: linear-gradient(-225deg,
+      #d9042b 0%,
+      #0903a6 29%,
+      #04d924 67%,
+      #f2b705 100%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-emphasis-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 190px;
+  padding-bottom: 250px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.caption .border1 {
+  background-color: #584;
+  color: #fff;
+  padding: 18px;
+  font-size: 85px;
+  letter-spacing: 10px;
+}
+
+.container1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+h3 {
+  color: #262626;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+p {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #666666;
+}
+
+p.small {
+  font-size: 14px;
+}
+
+.go-corner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  background-color: #00838d;
+  border-radius: 0 4px 0 32px;
+}
+
+.go-arrow {
+  margin-top: -4px;
+  margin-right: -4px;
+  color: white;
+  font-family: courier, sans;
+}
+
+.card1 {
+  display: block;
+  position: relative;
+  max-width: 262px;
+  background-color: #f2f8f9;
+  border-radius: 4px;
+  padding: 32px 24px;
+  margin: 12px;
+  text-decoration: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.card1:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -16px;
+  right: -16px;
+  background: #00838d;
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+  transform: scale(1);
+  transform-origin: 50% 50%;
+  transition: transform 0.25s ease-out;
+}
+
+.card1:hover:before {
+  transform: scale(21);
+}
+
+.card1:hover p {
+  transition: all 0.3s ease-out;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.card1:hover h3 {
+  transition: all 0.3s ease-out;
+  color: #ffffff;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+}
+
+.hw-forum {
+  position: sticky;
+  align-self: flex-start;
+  top: 0;
+  margin-right: 10px;
+}
