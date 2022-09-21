@@ -35,13 +35,6 @@ export const Temas = [
     descripcion: "Ejes cartesianos",
   },
   {
-    nombre: "Rectas y Planos",
-    ejercicios: "6_geometria_t",
-    teoria: "6_geometria_t",
-    imagen: 6,
-    descripcion: "",
-  },
-  {
     nombre: "Limites",
     ejercicios: "7_limites_e",
     teoria: "7_limites_t",
