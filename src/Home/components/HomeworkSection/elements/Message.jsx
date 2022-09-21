@@ -32,13 +32,13 @@ export class Message extends Component {
     return (
       <div className="container">
           <form onSubmit={this.onSubmit}>
-          <div className="row">
-            <div className="col-10 d-flex align-items-center justify-content-center ">
+          <div className="d-flex align-items-center justify-content-evenly">
+            <div className="p-2 w-100">
               <textarea name="mensaje" placeholder="Escribe aquí tu duda..." className="form-control"
                 value={this.state.texto} onChange={this.guardarValor} />
             </div>
-            <div className="col-2 d-flex">
-              &npsb; <input type="submit" className="btn btn-outline-light" value="Enviar" />
+            <div className="p-2 flex-shrink-1">
+              &npsb; <input type="submit" className="btn btn-size btn-outline-light" value="Enviar" />
             </div>
           </div>
         </form>

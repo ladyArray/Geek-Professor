@@ -390,6 +390,11 @@ ansi-styles@^3.2.1:
   dependencies:
     color-convert "^1.9.0"
 
+bootswatch@^5.2.1:
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/bootswatch/-/bootswatch-5.2.1.tgz#80c49ac3ad394e58be630978c95e3bce1d1679ac"
+  integrity sha512-tbuZb0nJ1XUvRO8KYoEULsbAlAqazcFS6S5dTeJOkw2RxQgg0RJqKkngRTfNSFfqfI4mTdFPpC4mKkaw0YoDFA==
+
 browserslist@^4.20.2:
   version "4.21.3"
   resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.21.3.tgz#5df277694eb3c48bc5c4b05af3e8b7e09c5a6d1a"

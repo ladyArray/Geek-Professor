@@ -7,7 +7,7 @@ export class Forum extends Component {
       <ul>
         {this.props.coleccion.map((mensaje, index) => {
           return(
-            <li key={index}> {mensaje}</li>
+            <li key={index} className="text-success"> {mensaje}</li>
           )
         })}
       </ul>

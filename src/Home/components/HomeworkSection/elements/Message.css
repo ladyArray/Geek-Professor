@@ -1,3 +1,12 @@
 .form-control {
-    font-size: small;
+    font-size: medium !important;
+    width: 25vw !important;
+    height: 5vh !important;
+}
+
+
+.btn-size{
+    width: 7vw;
+    height: 3vw;
+    font-size: medium !important;
 }

@@ -1,0 +1,16 @@
+.btn-container{
+    width: 15vw;
+    height: 10vh;
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    z-index: 999;
+
+}
+
+.signBtn{
+    width: 15vw;
+    height: 10vh;
+    font-size: 10em !important;
+    border-radius: 5em !important;
+}

@@ -25,7 +25,8 @@ html {
 .bgimg-9,
 .bgimg-10,
 .bgimg-11,
-.bgimg-12 {
+.bgimg-12,
+.bgimg-13{
   position: relative;
   background-attachment: fixed;
   background-position: center;
@@ -100,6 +101,11 @@ html {
 .bgimg-12 {
   background-image: url("../../../images/libros_12.jpg");
   min-height: 100vh;
+}
+.bgimg-13 {
+  background-image: url("../../../images/libros_3.jpg");
+  min-height: 100vh;
+  min-width: 100vw;
 }
 
 .caption {
@@ -184,7 +190,7 @@ p {
   font-size: 17px;
   font-weight: 400;
   line-height: 20px;
-  color: #666666;
+  /* color: #666666; */
 }
 
 p.small {
@@ -263,5 +269,10 @@ p.small {
   position: sticky;
   align-self: flex-start;
   top: 0;
-  margin-right: 10px;
+  /* margin-right: 10px; */
+}
+
+.card-header:first-child {
+  font-size: xx-large;
+  text-align: center;
 }

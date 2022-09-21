@@ -26,7 +26,8 @@ class HomeworkSection extends React.Component {
     this.state = {
       arrayDatos: [],
       abierto: false,
-      tarea: ''
+      tarea: '',
+      aux: ''
     }
   }
 
@@ -39,10 +40,18 @@ class HomeworkSection extends React.Component {
 
   abrirModal = (e) => {
     this.setState({ abierto: true });
+    this.aux = this.tarea
   }
 
   cerrarModal = (e) => {
-    this.setState({ abierto: false });
+    // let aux = this.tarea
+
+    if (e.target.value == "Cancelar") {
+      this.tarea = this.aux
+      this.setState({ abierto: false })
+    } else {
+      this.setState({ abierto: false })
+    }
   }
 
   handleChange = (e) => {
@@ -66,11 +75,11 @@ class HomeworkSection extends React.Component {
             appElement={document.getElementById('root')}
             isOpen={this.state.abierto}
             style={estilo} >
-            <form onSubmit={this.updateHomework}>
+            <form onSubmit={this.updateHomework} className="justify-content-evenly">
               <textarea type="text" name="tarea" className='tarea' onChange={this.handleChange} />
             </form>
-            <input type='button' className='btn btn-lg btn-outline-danger align-items-center' onClick={this.cerrarModal} value='Cancelar' /> &nbsp;
-            <input type='submit' className='btn btn-lg btn-outline-success align-items-end' onClick={this.cerrarModal} value="Añadir" />
+            <input type='button' className='btn btn-lg btn-danger' onClick={this.cerrarModal} value='Cancelar' /> &nbsp;
+            <input type='submit' className='btn btn-lg btn-success' onClick={this.cerrarModal} value="Añadir" />
           </Modal>
         </div>
         <div className='container2'>
